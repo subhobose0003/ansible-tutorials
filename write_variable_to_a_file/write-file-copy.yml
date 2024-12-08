@@ -1,0 +1,11 @@
+---
+- name: copy module demo
+  hosts: all 
+  vars:
+    fruit: "banana"
+    output: "output.txt"
+  tasks:
+    - name: write to a file 
+      ansible.builtin.copy:
+        content: "{{ fruit }}"
+        dest: "/home/sbose/ansible-tutorials/write_variable_to_a_file/{{ output }}"

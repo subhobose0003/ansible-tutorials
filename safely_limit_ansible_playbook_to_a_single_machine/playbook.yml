@@ -1,0 +1,8 @@
+---
+- name: harmful playbook
+  hosts: "{{ HOST }}"
+  tasks:
+    - name: harmful tasks 
+      ansible.builtin.debug:
+        msg: "harmful task"
+
