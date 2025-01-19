@@ -1,0 +1,9 @@
+---
+all:
+  children:
+    automation_hub:
+      hosts:
+        automation-hub.homelab.com:
+    dev_hosts:
+      hosts:
+        192.168.0.251
